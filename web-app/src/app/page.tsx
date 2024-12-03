@@ -16,7 +16,7 @@ async function AccountButton() {
     <div className="flex gap-3 items-center">
       <LogoutButton />
       <Link href={"/account"}>
-        <Image src={user.image} width={100} height={100} alt="Profile" className="h-8 w-8 rounded-full mr-4" />
+        <Image src={user.image ?? ""} width={100} height={100} alt="Profile" className="h-8 w-8 rounded-full mr-4" />
       </Link>
     </div>
   )
